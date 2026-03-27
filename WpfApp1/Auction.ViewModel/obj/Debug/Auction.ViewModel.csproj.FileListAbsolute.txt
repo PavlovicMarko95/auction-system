@@ -1,0 +1,9 @@
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\bin\Debug\Auction.ViewModel.dll
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\bin\Debug\Auction.ViewModel.pdb
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\bin\Debug\Auction.Model.dll
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\bin\Debug\Auction.Model.pdb
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\obj\Debug\Auction.ViewModel.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\obj\Debug\Auction.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\obj\Debug\Auction..D3701489.Up2Date
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\obj\Debug\Auction.ViewModel.dll
+C:\Users\HP\source\repos\WpfApp1\Auction.ViewModel\obj\Debug\Auction.ViewModel.pdb

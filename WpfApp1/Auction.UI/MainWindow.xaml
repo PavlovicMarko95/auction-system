@@ -1,0 +1,39 @@
+﻿<Window x:Class="Auction.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Auction.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="650">
+    <Grid >
+        <Grid Width="450" Height="350"  Margin="80,50,120,34">
+
+            <ListBox Width="350" ItemsSource="{Binding AuctionList, ValidatesOnNotifyDataErrors=False}" SelectedItem="{Binding CurrentAuction}"  SelectionChanged="ListBox_SelectionChanged" Height="255" VerticalAlignment="Top" Margin="0,0,100,0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding Path=AuctionName}"/>
+                            <Label Content="{Binding Path=Cena}"/>
+                            <!--<Label Content="{Binding Path=Vreme}"/>-->
+                            <Label Content="{Binding Path=Trenutni}"/>
+                            <!--<Label Content="{Binding Path=Pobednik}"/>-->
+                            <Label Content="{Binding PreostaloVreme, StringFormat={}{0:mm\\:ss}}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Label Width="90" Height="30" Content="{Binding TrenutniKorisnik}" Name="UserName" Margin="350,10,10,310"/>
+            <!--<Button Width="90" Margin="25,63,25,10" Click="Button_Click">Login/logout</Button> -->
+            <!--<Button Height="30" Width="90" Margin="25,50,25,21" Click="Button_Click" >Logout</Button>-->
+
+            <!--<Grid Margin="88,329,202,10">-->
+            <Button Name="bid" Command="{Binding BidCommand}" Height="30" Width="90" Margin="30,275,330,45">Bid</Button>
+            <Button Name="newbtn"  Height="30" Width="90" Margin="150,275,210,45" RenderTransformOrigin="8.669,6.337" Click="Button_Click_1">New Auction</Button>
+            <!--</Grid>-->
+
+        </Grid>
+
+    </Grid>
+</Window>
